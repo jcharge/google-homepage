@@ -10,7 +10,7 @@
 }
 #middle-div {
     width: 600px;
-    height: 600px;
+    height: 475px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -18,14 +18,14 @@
 #logo-img {
     width: 272px;
     height: 92px;
-    padding-bottom: 20px;
+    margin-bottom: 30px;
     align-self: center;
 }
 #search-bar {
-    width: 500px;
-    height: 40px;
+    width: 570px;
+    height: 45px;
     border: solid lightgray 1px;
-    border-radius: 20px;
+    border-radius: 25px;
     display: flex;
     align-self: center;
 }
@@ -33,34 +33,59 @@
     box-shadow: 0px 0px 5px lightgray;
 }
 .search-bar-img {
-    padding: 10px;
+    margin: 13px 15px;
+    height: 20px;
 }
 #text-bar {
     border: none;
-    width: 420px;
+    width: 480px;
     font-size: 12pt;
 }
 #text-bar:focus-visible {
     outline: none;
 }
 #search-button-div {
-    height: 30px;
-    width: 400px;
+    height: 35px;
+    width: 300px;
     align-self: center;
     display: flex;
     margin-top: 25px;
-    background-color: lime;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 button {
     border: none;
-    background-color: rgb(245, 245, 245);
-    margin-left: 60px;
+    background-color: rgb(250, 250, 250);
+    border-radius: 4px;
+    padding-right: 17px;
+    padding-left: 17px;
+    font-size: 14px;
 }
 button:hover {
-    border: solid gray 1px;
+    border: solid lightgray 1px;
 }
-
-
+#google-button {
+    margin-right: 10px;
+}
+#google-button:hover {
+    margin-right: 9px;
+    margin-left: -1px;
+}
+#lucky-button:hover {
+    margin-right: -1px;
+    margin-left: -1px;
+}
+#middle-div-link {
+    text-align: center;
+    font-size: 0.9em;
+}
+a {
+    text-decoration: none;
+    font-family: Roboto;
+}
+a:hover {
+    text-decoration: underline;
+}
 </style>
 
 <html>
@@ -76,9 +101,13 @@ button:hover {
                 <img class="search-bar-img" src="images/outline_mic_black_24dp.png">
             </div>
             <div id="search-button-div">
-                <button>Google Search</button>
-                <button>I'm feeling Lucky</button>
-            
+                <button id="google-button">Google Search</button>
+                <button id="lucky-button">I'm feeling Lucky</button>
+            </div>
+            <div id="middle-div-link">
+                <a href="https://about.google/stories/jason-barnes-accessibility-tools/?utm_source=google&utm_medium=hpp&utm_campaign=EN-US" target="_blank">
+                    See how Google and others are building a more accessible world
+                </a>
             </div>
         </div>
     </section>
