@@ -1,10 +1,87 @@
 <!DOCTYPE html>
+
+<style>
+
+#main-section{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-items: center;
+}
+#middle-div {
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+#logo-img {
+    width: 272px;
+    height: 92px;
+    padding-bottom: 20px;
+    align-self: center;
+}
+#search-bar {
+    width: 500px;
+    height: 40px;
+    border: solid lightgray 1px;
+    border-radius: 20px;
+    display: flex;
+    align-self: center;
+}
+#search-bar:hover {
+    box-shadow: 0px 0px 5px lightgray;
+}
+.search-bar-img {
+    padding: 10px;
+}
+#text-bar {
+    border: none;
+    width: 420px;
+    font-size: 12pt;
+}
+#text-bar:focus-visible {
+    outline: none;
+}
+#search-button-div {
+    height: 30px;
+    width: 400px;
+    align-self: center;
+    display: flex;
+    margin-top: 25px;
+    background-color: lime;
+}
+button {
+    border: none;
+    background-color: rgb(245, 245, 245);
+    margin-left: 60px;
+}
+button:hover {
+    border: solid gray 1px;
+}
+
+
+</style>
+
 <html>
 
 
-
-
-
+<!--The search bar area-->
+    <section id="main-section">
+        <div id="middle-div">
+            <img id="logo-img" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+            <div id="search-bar">
+                <img class="search-bar-img" src="images/outline_search_black_24dp.png">
+                <input id="text-bar" type="text">
+                <img class="search-bar-img" src="images/outline_mic_black_24dp.png">
+            </div>
+            <div id="search-button-div">
+                <button>Google Search</button>
+                <button>I'm feeling Lucky</button>
+            
+            </div>
+        </div>
+    </section>
 
 
 
